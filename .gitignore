@@ -1,59 +1,33 @@
-# Byte-compiled / optimized / DLL files
+# Raw GDC download payloads
+[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/
+metadata extraction/gdc_data/
+
+# Local Python environment
+quantum_test/
+.venv/
+venv/
+.env
+.env.local
+.env.*.local
+
+# Generated training artifacts
+prepared_ratio_2_0/
+training_outputs/
+
+# Python cache and tooling
 __pycache__/
 *.py[cod]
 *.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-#  * https://pyinstaller.readthedocs.io/en/latest/usage.html#adding-data-files
-#  * https://github.com/pyinstaller/pyinstaller/issues/1238
-#  * https://github.com/pyinstaller/pyinstaller/pull/2450
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
+.mypy_cache/
+.pytest_cache/
 .tox/
 .nox/
 .coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.mypy_cache/
-.pytest_cache/
-.coverage
+htmlcov/
 
-# Data files
+# Large generated data files
 *.parquet
-*.csv
-*.tsv
 *.npy
 *.pkl
 *.joblib
@@ -62,37 +36,30 @@ coverage.xml
 *.hdf5
 *.mat
 
-# Expression matrix directories
-expression_matrix/
-metadata_extraction/gdc_data/
-prepared_ratio_2_0/
-
-# Temporary files
+# Logs and temporary files
+*.log
+*~
 *.tmp
 *.temp
 
-# IDE
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS generated files
+# Jupyter and OS files
+.ipynb_checkpoints/
 .DS_Store
 .DS_Store?
 ._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# Environment files
-.env
-.env.local
-.env.*.local
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Local configuration
+# Local or sensitive configuration
+config.ini
 config.local
+secrets.json
+
+# Large local datasets not needed in source control
+datasets/
+data/
