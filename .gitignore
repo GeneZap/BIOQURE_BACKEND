@@ -1,12 +1,10 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
+*.class
 
 # C extensions
 *.so
-.*.swp
-*~
 
 # Distribution / packaging
 .Python
@@ -64,8 +62,10 @@ coverage.xml
 *.hdf5
 *.mat
 
-# Expression matrix directory
-EXPRESSSION_MATRIX/
+# Expression matrix directories
+expression_matrix/
+metadata_extraction/gdc_data/
+prepared_ratio_2_0/
 
 # Temporary files
 *.tmp
